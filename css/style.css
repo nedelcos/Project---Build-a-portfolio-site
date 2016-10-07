@@ -1,0 +1,85 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+.logo {
+  padding-top: 15px;
+}
+
+.text-thin {
+  font-weight: 200;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-grey {
+  color: #636363;
+}
+
+.text-washed {
+  color: #929292;
+}
+
+.footer {
+  margin: 2em 0 2em 0;
+}
+
+.header {
+  margin-top: 1em;
+}
+
+.social-icon {
+  margin: 1em;
+  font-size: 2em;
+}
+
+.featured-title {
+  border-bottom: 1px solid #ccc;
+}
+
+.article {
+  margin-bottom: 3em;
+}
+
+.bottom-divider {
+  width: 50%;
+  border-color: #ddd;
+}
+
+
+
+/* breakpoints */
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 24px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px !important;
+  }
+
+  h4 {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .bottom-divider {
+    width: 100%;
+  }
+}

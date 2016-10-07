@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta name="description" content="Daniel Nedelcu - Personal portfolio website" />
   <meta name="author" content="Daniel Nedelcu">
@@ -7,13 +7,86 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
 
-
 	<title>Daniel Nedelcu - Portfolio</title>
-	<link href="style.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet" crossorigin="anonymous">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div class"content">
+	<div class="container">
+
+		<!--HEADER (logo + name)-->
+		<header class="row header">
+			<div class="col-md-2 col-sm-2 col-xs-2 logo">
+				<a href="index.html" alt="home">
+					<img src="img/logo.svg" width="70px" height="70px" alt="daniel logo">
+				</a>
+			</div>
+			<div class="col-md-10 col-sm-10 col-xs-10 text-right text-uppercase">
+				<h1 class="text-thin">Daniel Nedelcu</h1>
+				<h4 class="text-bold text-grey">Front End Developer</h3>
+			</div>
+		</header>
+		<div class="row">
+			<div class="col-md-12">
+				<hr>
+			</div>
+		</div>
+		<!--SHOWCASE (main image)-->
+		<section class="row">
+			<div class="col-sm-12">
+				<img class="img-responsive main-image" alt="" src="http://placehold.it/1200x500/" scrset="">  <!--2 images !!!-->
+			</div>
+		</section>
+
+		<!--PROJECTS-->
+		<section class="row all-projects text-center">
+			<div class="col-md-12">
+				<h3 class="text-lowercase text-left text-bold text-washed">
+				Featured  Work ⬇
+				</h3>
+			</div>
+			<article class="article col-md-4 col-sm-6">
+				<img class="img-responsive" alt="" src="http://www.placehold.it/800x600/">
+				<h3 class="featured-work-title text-uppercase">Virtual X</h3>
+				<a class="link-to" target="_blank" href="http://www.virtualx.space">www.virtualx.space</a>
+
+				<!-- Large modal -->
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+				<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+				  <div class="modal-dialog modal-lg" role="document">
+				    <div class="modal-content">
+				      ...
+				    </div>
+				  </div>
+				</div>
+
+			</article>
+			<article class="article col-md-4 col-sm-6">
+				<img class="img-responsive" alt="" src="http://www.placehold.it/800x600/">
+				<h3 class="featured-work-title text-uppercase">Rentador Auto</h3>
+				<a class="link-to" target="_blank" href="http://www.rentador.ro">www.rentador.ro</a>
+			</article>
+			<article class="article col-md-4 col-sm-6">
+				<img class="img-responsive" alt="" src="http://www.placehold.it/800x600/">
+				<h3 class="featured-work-title text-uppercase">Panda Project</h3>
+				<a class="link-to" target="_blank" href="http://www.pandaproject.ro">www.pandaproject.ro</a>
+			</article>
+		</section>
+
+		<hr class="bottom-divider">
+
+		<footer class="row footer">
+			<div class="col-md-12 social text-center">
+				<a class="fontawesome-facebook social-icon" href="https://facebook.com/dan.nede" target="_blank"></a>
+				<a class="fontawesome-linkedin social-icon" href="https://facebook.com/dan.nede" target="_blank"></a>
+				<a class="fontawesome-github social-icon" href="https://facebook.com/dan.nede" target="_blank"></a>
+			</div>
+		</footer>
 
 	</div>
 
