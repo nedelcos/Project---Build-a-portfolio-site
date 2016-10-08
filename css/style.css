@@ -13,9 +13,14 @@ body {
   font-family: 'Raleway', sans-serif !important;
 }
 
+mark {
+  background-color: rgba(64, 64, 64, 0.82) !important;
+  color: white !important;
+}
+
 .logo {
   padding-top: 15px;
-  width:70px;
+  width: 70px;
 }
 
 .text-thin {
@@ -46,11 +51,6 @@ body {
   margin-top: 1em;
 }
 
-mark {
-  background-color: rgba(64, 64, 64, 0.82) !important;
-  color: white !important;
-}
-
 .social-icon {
   margin: 1em;
   font-size: 2em;
@@ -65,11 +65,11 @@ mark {
 
 .caption2 {
   width: calc(100% - 30px);
-  bottom: calc(50% - 1.5em);
+  bottom: calc(50% - 4em);
   position: absolute;
   font-size: 1.2em;
   margin-right: 3em;
-  display:none;
+  display: none;
 }
 
 .featured-title {
@@ -93,8 +93,6 @@ mark {
   width: 50%;
   border-color: #ddd;
 }
-
-
 
 /* breakpoints */
 @media screen and (max-width: 400px) {
