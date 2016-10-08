@@ -21,14 +21,14 @@
 
 		<!--HEADER (logo + name)-->
 		<header class="row header">
-			<div class="col-md-2 col-sm-2 col-xs-2">
+			<div class="col-md-2 col-sm-2 col-xs-2 logo-cont">
 				<a href="index.html">
 					<img class="logo" src="img/logo.svg" alt="daniel logo">
 				</a>
 			</div>
-			<div class="col-md-10 col-sm-10 col-xs-10 text-right text-uppercase">
-				<h1 class="text-thin">Daniel Nedelcu</h1>
-				<h4 class="text-bold text-grey">Front End Developer</h4>
+			<div class="col-md-10 col-sm-10 col-xs-10 name-cont text-right text-uppercase">
+				<h1 class="my-name text-thin">Daniel Nedelcu</h1>
+				<h4 class="my-title text-bold text-grey">Front End Developer</h4>
 			</div>
 		</header>
 		<div class="row">
@@ -39,7 +39,12 @@
 		<!--SHOWCASE (main image)-->
 		<section class="row">
 			<div class="col-sm-12">
-				<img class="img-responsive main-image" alt="" src="img/main_1.jpg" scrset="img/main_2.jpg 768w, img/main_1.jpg 1200w">  <!--2 images !!!-->
+				<picture>
+					<source
+						media="(min-width: 768px)"
+						srcset="img/main_1.jpg">
+					<img class="img-responsive main-image" alt="code perspective" src="img/main_2.jpg">  <!--2 images !!!-->
+				</picture>
 				<div class="caption1 text-center text-bold">
         	<p><mark>I ❤ white !</mark></p>
 					<p><mark>...and clean, minimalistic designs</mark></p>
@@ -88,15 +93,20 @@
 	</div>
 
 	<!-- Modals -->
-	<div class="modal fade" id="project-virtualx" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal fade" id="project-virtualx" tabindex="-1" role="dialog" aria-labelledby="virtualxLabel" aria-hidden="true">
 			<div class="modal-dialog">
 					<div class="modal-content">
 							<div class="modal-header">
-									<h4 class="modal-title" id="myModalLabel">Virtual X - VR Production Services</h4>
+									<h4 class="modal-title" id="virtualxLabel">Virtual X - VR Production Services</h4>
 							</div>
 							<div class="modal-body">
 								<a href="http://www.virtualx.space" target="_blank">
-									<img class="img-responsive" src="img/screen_virtualx.jpg">
+									<picture>
+										<source
+											media="(min-width: 500px)"
+											srcset="img/screen_virtualx.jpg">
+										<img class="img-responsive main-image" alt="virtual x screenshot" src="img/screen_virtualx_crop.jpg">  <!--2 images !!!-->
+									</picture>
 								</a>
 								<p class="modal-desc">
 									<b>Virtual eXperience</b> is a game-changing marketing and operational tool, tailored
@@ -109,15 +119,20 @@
 					</div>
 			</div>
 	</div>
-	<div class="modal fade" id="project-rentador" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal fade" id="project-rentador" tabindex="-1" role="dialog" aria-labelledby="rentadorLabel" aria-hidden="true">
 			<div class="modal-dialog">
 					<div class="modal-content">
 							<div class="modal-header">
-									<h4 class="modal-title" id="myModalLabel">Rentador Auto</h4>
+									<h4 class="modal-title" id="rentadorLabel">Rentador Auto</h4>
 							</div>
 							<div class="modal-body">
 								<a href="http://www.rentador.ro" target="_blank">
-									<img class="img-responsive" src="img/screen_rentador.jpg">
+									<picture>
+										<source
+											media="(min-width: 500px)"
+											srcset="img/screen_rentador.jpg">
+										<img class="img-responsive main-image" alt="rentador screenshot" src="img/screen_rentador_crop.jpg">  <!--2 images !!!-->
+									</picture>
 								</a>
 								<p class="modal-desc">
 									<b>Rentador</b> is a <em>rent-a-car</em> company, based in Bucharest - Romania.
@@ -130,15 +145,20 @@
 					</div>
 			</div>
 	</div>
-	<div class="modal fade" id="project-panda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal fade" id="project-panda" tabindex="-1" role="dialog" aria-labelledby="pandaLabel" aria-hidden="true">
 			<div class="modal-dialog">
 					<div class="modal-content">
 							<div class="modal-header">
-									<h4 class="modal-title" id="myModalLabel">Panda Project</h4>
+									<h4 class="modal-title" id="pandaLabel">Panda Project</h4>
 							</div>
 							<div class="modal-body">
 								<a href="http://www.pandaproject.ro" target="_blank">
-									<img class="img-responsive" src="img/screen_panda.jpg">
+									<picture>
+										<source
+											media="(min-width: 500px)"
+											srcset="img/screen_panda.jpg">
+										<img class="img-responsive main-image" alt="panda project screenshot" src="img/screen_panda_crop.jpg">  <!--2 images !!!-->
+									</picture>
 								</a>
 								<p class="modal-desc">
 									<b>Panda Project</b> is a media agency, based in Bucharest - Romania, specialized in
