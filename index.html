@@ -12,22 +12,23 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet" crossorigin="anonymous">
-
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
 <body>
 	<div class="container">
 
 		<!--HEADER (logo + name)-->
 		<header class="row header">
-			<div class="col-md-2 col-sm-2 col-xs-2 logo">
-				<a href="index.html" alt="home">
-					<img src="img/logo.svg" width="70px" height="70px" alt="daniel logo">
+			<div class="col-md-2 col-sm-2 col-xs-2">
+				<a href="index.html">
+					<img class="logo" src="img/logo.svg" alt="daniel logo">
 				</a>
 			</div>
 			<div class="col-md-10 col-sm-10 col-xs-10 text-right text-uppercase">
 				<h1 class="text-thin">Daniel Nedelcu</h1>
-				<h4 class="text-bold text-grey">Front End Developer</h3>
+				<h4 class="text-bold text-grey">Front End Developer</h4>
 			</div>
 		</header>
 		<div class="row">
@@ -38,7 +39,15 @@
 		<!--SHOWCASE (main image)-->
 		<section class="row">
 			<div class="col-sm-12">
-				<img class="img-responsive main-image" alt="" src="http://placehold.it/1200x500/" scrset="">  <!--2 images !!!-->
+				<img class="img-responsive main-image" alt="" src="img/main_1.jpg" scrset="img/main_2.jpg 768w, img/main_1.jpg 1200w">  <!--2 images !!!-->
+				<div class="caption1 text-center text-bold">
+        	<p><mark>I ❤ white !</mark></p>
+					<p><mark>...and clean, minimalistic designs</mark></p>
+      	</div>
+				<div class="caption2 text-center text-bold">
+        	<p><mark>oh 😼</mark></p>
+					<p><mark>...and responsive layouts</mark></p>
+      	</div>
 			</div>
 		</section>
 
@@ -50,31 +59,19 @@
 				</h3>
 			</div>
 			<article class="article col-md-4 col-sm-6">
-				<img class="img-responsive" alt="" src="http://www.placehold.it/800x600/">
-				<h3 class="featured-work-title text-uppercase">Virtual X</h3>
-				<a class="link-to" target="_blank" href="http://www.virtualx.space">www.virtualx.space</a>
-
-				<!-- Large modal -->
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
-
-				<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-				  <div class="modal-dialog modal-lg" role="document">
-				    <div class="modal-content">
-				      ...
-				    </div>
-				  </div>
-				</div>
-
+				<img class="img-responsive project-img" alt="rentador screenshot" src="img/thumb_virtualx.jpg" data-toggle="modal" data-target="#project-virtualx">
+				<h4 class="featured-work-title text-uppercase text-bold text-grey">Virtual eXperience</h4>
+				<a class="link-to fontawesome-globe" target="_blank" href="http://www.virtualx.space"> virtualx.space</a>
 			</article>
 			<article class="article col-md-4 col-sm-6">
-				<img class="img-responsive" alt="" src="http://www.placehold.it/800x600/">
-				<h3 class="featured-work-title text-uppercase">Rentador Auto</h3>
-				<a class="link-to" target="_blank" href="http://www.rentador.ro">www.rentador.ro</a>
+				<img class="img-responsive project-img" alt="rentador screenshot" src="img/thumb_rentador.jpg" data-toggle="modal" data-target="#project-rentador">
+				<h4 class="featured-work-title text-uppercase text-bold text-grey">Rentador Rentals</h4>
+				<a class="link-to fontawesome-globe" target="_blank" href="http://www.rentador.ro"> rentador.ro</a>
 			</article>
 			<article class="article col-md-4 col-sm-6">
-				<img class="img-responsive" alt="" src="http://www.placehold.it/800x600/">
-				<h3 class="featured-work-title text-uppercase">Panda Project</h3>
-				<a class="link-to" target="_blank" href="http://www.pandaproject.ro">www.pandaproject.ro</a>
+				<img class="img-responsive project-img" alt="rentador screenshot" src="img/thumb_panda.jpg" data-toggle="modal" data-target="#project-panda">
+				<h4 class="featured-work-title text-uppercase text-bold text-grey">Panda Project</h4>
+				<a class="link-to fontawesome-globe" target="_blank" href="http://www.pandaproject.ro"> pandaproject.ro</a>
 			</article>
 		</section>
 
@@ -83,13 +80,77 @@
 		<footer class="row footer">
 			<div class="col-md-12 social text-center">
 				<a class="fontawesome-facebook social-icon" href="https://facebook.com/dan.nede" target="_blank"></a>
-				<a class="fontawesome-linkedin social-icon" href="https://facebook.com/dan.nede" target="_blank"></a>
-				<a class="fontawesome-github social-icon" href="https://facebook.com/dan.nede" target="_blank"></a>
+				<a class="fontawesome-linkedin social-icon" href="https://www.linkedin.com/in/danielgnedelcu" target="_blank"></a>
+				<a class="fontawesome-github social-icon" href="https://github.com/nedelcos" target="_blank"></a>
 			</div>
 		</footer>
 
 	</div>
 
+	<!-- Modals -->
+	<div class="modal fade" id="project-virtualx" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h4 class="modal-title" id="myModalLabel">Virtual X - VR Production Services</h4>
+							</div>
+							<div class="modal-body">
+								<a href="http://www.virtualx.space" target="_blank">
+									<img class="img-responsive" src="img/screen_virtualx.jpg">
+								</a>
+								<p class="modal-desc">
+									<b>Virtual eXperience</b> is a game-changing marketing and operational tool, tailored
+										for corporate and real estate clients around the world.
+								</p>
+							</div>
+							<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+					</div>
+			</div>
+	</div>
+	<div class="modal fade" id="project-rentador" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h4 class="modal-title" id="myModalLabel">Rentador Auto</h4>
+							</div>
+							<div class="modal-body">
+								<a href="http://www.rentador.ro" target="_blank">
+									<img class="img-responsive" src="img/screen_rentador.jpg">
+								</a>
+								<p class="modal-desc">
+									<b>Rentador</b> is a <em>rent-a-car</em> company, based in Bucharest - Romania.
+										You can rent a small car or even a bus.
+								</p>
+							</div>
+							<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+					</div>
+			</div>
+	</div>
+	<div class="modal fade" id="project-panda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+					<div class="modal-content">
+							<div class="modal-header">
+									<h4 class="modal-title" id="myModalLabel">Panda Project</h4>
+							</div>
+							<div class="modal-body">
+								<a href="http://www.pandaproject.ro" target="_blank">
+									<img class="img-responsive" src="img/screen_panda.jpg">
+								</a>
+								<p class="modal-desc">
+									<b>Panda Project</b> is a media agency, based in Bucharest - Romania, specialized in
+										delivering <em>direct marketing</em> services to companies
+								</p>
+							</div>
+							<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+					</div>
+			</div>
+	</div>
 
 </body>
 </html>

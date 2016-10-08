@@ -15,6 +15,7 @@ body {
 
 .logo {
   padding-top: 15px;
+  width:70px;
 }
 
 .text-thin {
@@ -33,17 +34,42 @@ body {
   color: #929292;
 }
 
+.project-img {
+  cursor: pointer;
+}
+
 .footer {
   margin: 2em 0 2em 0;
 }
 
 .header {
-  margin-top: 1em;
+  margin-top: 1em;  
+}
+
+mark {
+  background-color: rgba(64, 64, 64, 0.82) !important;
+  color: white !important;
 }
 
 .social-icon {
   margin: 1em;
   font-size: 2em;
+}
+
+.caption1 {
+  width: calc(100% - 30px);
+  bottom: calc(50% - 1.5em);
+  position: absolute;
+  font-size: 1.5em;
+}
+
+.caption2 {
+  width: calc(100% - 30px);
+  bottom: calc(50% - 1.5em);
+  position: absolute;
+  font-size: 1.2em;
+  margin-right: 3em;
+  display:none;
 }
 
 .featured-title {
@@ -52,6 +78,15 @@ body {
 
 .article {
   margin-bottom: 3em;
+}
+
+.featured-work-title {
+  margin-top: 15px;
+  margin-bottom: 3px;
+}
+
+.modal-desc {
+  margin-top: 20px;
 }
 
 .bottom-divider {
@@ -75,6 +110,14 @@ body {
 
   h4 {
     font-size: 16px !important;
+  }
+
+  .caption1 {
+    display: none;
+  }
+
+  .caption2 {
+    display: block;
   }
 }
 
