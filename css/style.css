@@ -1,4 +1,4 @@
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
 
 /* fontawesome */
 [class*="fontawesome-"]:before {
@@ -51,9 +51,17 @@ mark {
   margin-top: 1em;
 }
 
+span.proj-link {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+.proj-icon {
+  font-size: 1.2em !important;
+}
+
 .social-icon {
   margin: 1em;
-  font-size: 2em;
+  font-size: 2em !important;
 }
 
 .caption1 {
