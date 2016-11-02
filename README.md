@@ -1,2 +1,7 @@
-# Project---Build-a-portfolio-site
-Project for Udacity Front End Developer Nanodegree
+#Udacity | Build a portfolio site
+
+Project - Portfolio
+
+FRONT END DEVELOPER Nanodegree 
+
+> [View Resume](https://nedelcos.github.io/Project---Build-a-portfolio-site/).
